@@ -1,0 +1,17 @@
+package com.amazon.qa.base;
+
+import org.openqa.selenium.WebDriver;
+
+public class TestBase {
+	
+	static WebDriver driver;
+	static Properties prop;
+	
+	
+public TestBase(){
+	
+	
+	
+	
+}
+}

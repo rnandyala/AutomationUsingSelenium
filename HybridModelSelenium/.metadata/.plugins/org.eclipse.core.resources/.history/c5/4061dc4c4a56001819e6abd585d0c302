@@ -1,0 +1,65 @@
+package com.amazon.qa.base;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+import java.util.concurrent.TimeUnit;
+
+import org.apache.poi.util.SystemOutLogger;
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+import com.crm.qa.util.TestUtil;
+
+public class TestBase {
+	
+	public static WebDriver driver;
+	public static Properties prop;
+	
+	
+public TestBase(){
+	
+	try {
+		prop = new Properties();
+		
+		FileInputStream  ip = new FileInputStream("Users\\raja\\NaveenHybridModelSelenium\\AmazonTest\\src\\main\\java\\com\\amazon\\qa\\config.properties");
+	
+	prop.load(ip);
+	
+	}
+	catch(FileNotFoundException ex1) {
+	
+		ex1.printStackTrace();
+	}
+	
+catch(IOException ex2) {
+	
+}
+}
+public static void initialization() {
+	
+
+	String browserName =prop.getProperty("browser");
+
+	if(browserName.equals(browserName)) {
+		
+	 driver = new ChromeDriver();
+	
+	}
+	else if(browserName.equals("FF")) {
+		driver = new FirefoxDriver();	
+	}
+	
+	driver.manage().window().maximize();
+	driver.manage().deleteAllCookies();
+	driver.manage().timeouts().pageLoadTimeout(TestUtil.PAGE_LOAD_TIMEOUT,TimeUnit.SECONDS);
+	driver.manage().timeouts().pageLoadTimeout(TestUtil.IMPLICIT_WAIT,TimeUnit.SECONDS);
+	
+	
+	driver.get(prop.getProperty("url"));
+}
+
+
+}

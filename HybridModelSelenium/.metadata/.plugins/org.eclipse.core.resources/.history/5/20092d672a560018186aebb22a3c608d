@@ -1,0 +1,29 @@
+package com.amazon.qa.pages;
+
+import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.FindBy;
+import com.amazon.qa.base.TestBase;
+
+public class LoginPage extends TestBase{
+
+	// Page Factory or Object Repository
+	
+	// By using below syntax there is no need to write find element by id and then give the id
+	// Below code simplifies all the process
+	@FindBy(name="email")
+	WebElement email;
+	
+	@FindBy(name="password")
+	WebElement password;
+	
+	
+	@FindBy(id="signInSubmit")
+	WebElement signinButton;
+	
+	
+	
+	
+	
+	
+	
+}

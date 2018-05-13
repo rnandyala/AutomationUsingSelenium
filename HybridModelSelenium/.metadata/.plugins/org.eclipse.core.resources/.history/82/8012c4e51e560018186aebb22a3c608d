@@ -1,0 +1,55 @@
+package com.amazon.qa.base;
+
+import java.io.FileInputStream;
+import java.io.FileNotFoundException;
+import java.io.IOException;
+import java.util.Properties;
+
+import org.openqa.selenium.WebDriver;
+import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.firefox.FirefoxDriver;
+
+public class TestBase {
+	
+	static WebDriver driver;
+	static Properties prop;
+	
+	
+public TestBase(){
+	
+	try {
+		prop = new Properties();
+		
+		FileInputStream  ip = new FileInputStream("C:\\Users\\raja\\NaveenHybridModelSelenium\\AmazonTest\\src\\main\\java\\com\\amazon\\qa\\config");
+	
+	prop.load(ip);
+	
+	}
+	catch(FileNotFoundException ex1) {
+	
+		
+	}
+	
+catch(IOException ex2) {
+	
+}
+}
+public static void initialization() {
+	
+
+	String browserName =prop.getProperty("browser");
+
+	if(browserName.equals(browserName)) {
+		
+	 driver = new ChromeDriver();
+	
+	}
+	else if(browserName.equals("FF")) {
+		driver = new FirefoxDriver();	
+	}
+	
+	
+}
+
+
+}

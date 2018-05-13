@@ -1,0 +1,17 @@
+package com.amazon.testcases;
+
+import com.amazon.qa.base.TestBase;
+
+
+
+public class LoginPageTest extends TestBase{
+
+	@BeforeMethod
+	public void setUp() {
+		
+	}
+	
+	
+	
+	
+}	

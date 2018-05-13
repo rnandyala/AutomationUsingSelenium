@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" ignored="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="Default suite" duration-ms="22270" started-at="2018-05-13T03:34:15Z" finished-at="2018-05-13T03:34:38Z">
+    <groups>
+    </groups>
+    <test name="Default test" duration-ms="22270" started-at="2018-05-13T03:34:15Z" finished-at="2018-05-13T03:34:38Z">
+      <class name="com.amazon.testcases.LoginPageTest">
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amazon.testcases.LoginPageTest@6d4b1c02]" name="setUp" is-config="true" duration-ms="5190" started-at="2018-05-13T03:34:15Z" finished-at="2018-05-13T03:34:20Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginPageTitleTest()[pri:1, instance:com.amazon.testcases.LoginPageTest@6d4b1c02]" name="loginPageTitleTest" duration-ms="73" started-at="2018-05-13T03:34:20Z" finished-at="2018-05-13T03:34:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginPageTitleTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.testcases.LoginPageTest@6d4b1c02]" name="tearDown" is-config="true" duration-ms="673" started-at="2018-05-13T03:34:21Z" finished-at="2018-05-13T03:34:21Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amazon.testcases.LoginPageTest@6d4b1c02]" name="setUp" is-config="true" duration-ms="4266" started-at="2018-05-13T03:34:21Z" finished-at="2018-05-13T03:34:25Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="amazonImageTest()[pri:2, instance:com.amazon.testcases.LoginPageTest@6d4b1c02]" name="amazonImageTest" duration-ms="51" started-at="2018-05-13T03:34:25Z" finished-at="2018-05-13T03:34:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- amazonImageTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.testcases.LoginPageTest@6d4b1c02]" name="tearDown" is-config="true" duration-ms="664" started-at="2018-05-13T03:34:26Z" finished-at="2018-05-13T03:34:26Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+        <test-method status="PASS" signature="setUp()[pri:0, instance:com.amazon.testcases.LoginPageTest@6d4b1c02]" name="setUp" is-config="true" duration-ms="4266" started-at="2018-05-13T03:34:26Z" finished-at="2018-05-13T03:34:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- setUp -->
+        <test-method status="PASS" signature="loginTest()[pri:3, instance:com.amazon.testcases.LoginPageTest@6d4b1c02]" name="loginTest" duration-ms="6348" started-at="2018-05-13T03:34:30Z" finished-at="2018-05-13T03:34:37Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- loginTest -->
+        <test-method status="PASS" signature="tearDown()[pri:0, instance:com.amazon.testcases.LoginPageTest@6d4b1c02]" name="tearDown" is-config="true" duration-ms="720" started-at="2018-05-13T03:34:37Z" finished-at="2018-05-13T03:34:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- tearDown -->
+      </class> <!-- com.amazon.testcases.LoginPageTest -->
+    </test> <!-- Default test -->
+  </suite> <!-- Default suite -->
+</testng-results>

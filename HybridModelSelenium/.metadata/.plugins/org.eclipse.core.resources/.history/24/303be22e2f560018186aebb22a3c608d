@@ -1,0 +1,22 @@
+package com.amazon.testcases;
+
+import org.testng.annotations.BeforeMethod;
+
+import com.amazon.qa.base.TestBase;
+
+
+
+public class LoginPageTest extends TestBase{
+
+	@BeforeMethod
+	public void setUp() {
+		
+		initialization();
+		
+		
+	}
+	
+	
+	
+	
+}	
